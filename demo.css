@@ -9,6 +9,12 @@ body
 font-family: leaguespartan;
 src: url(LeagueSpartan.otf);
 }
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
 .content
 {
   min-height: 600px;
@@ -26,6 +32,48 @@ src: url(LeagueSpartan.otf);
   border-bottom-width: thin;
   position: sticky;
   top: 0px;
+}
+
+.Home
+{
+  float: right;
+  position: relative;
+  padding: 19px;
+  font-family: leaguespartan;
+  font-weight: normal;
+  right: 350px;
+  border-bottom-style: none;
+}
+
+.Services
+{
+  float: right;
+  position: relative;
+  padding: 19px;
+  font-family: leaguespartan;
+  font-weight: normal;
+  right: 160px;
+  border-bottom-style: none;
+}
+
+.About
+{
+  float: right;
+  position: relative;
+  padding: 19px;
+  font-family: leaguespartan;
+  font-weight: normal;
+  left: 63px;
+}
+
+.Contact
+{
+  float: right;
+  position: relative;
+  padding: 19px;
+  font-family: leaguespartan;
+  font-weight: normal;
+  left: 308px;
 }
 
 .container
