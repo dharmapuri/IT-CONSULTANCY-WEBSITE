@@ -46,3 +46,38 @@ function contactoff()
 {
    document.getElementById("Contact").style.borderBottom="";
 }
+
+window.addEventListener("load", function(){
+  typewrite("catchy", "We have Strategy for Serving Things Right.");
+  });
+
+
+  function typewrite (target, text, loop, speed) {
+
+  setTimeout(function() {
+
+  target = document.getElementById(target);
+  if (speed === undefined) { speed = 150; }
+  if (loop === undefined) { loop = false; }
+
+
+  let pointer = 0;
+  let timer = setInterval(function(){
+    pointer++;
+    if (pointer <= text.length) {
+      target.innerHTML = text.substring(0, pointer);
+    } else {
+      if (loop) { pointer = 0; }
+      else { clearInterval(timer); }
+    }
+  }, speed);
+},1700)
+}
+
+var item = document.getElementById("button");
+item.addEventListener("mouseover",function(){
+  item.style.backgroundColor = "orangered";
+})
+item.addEventListener("mouseout",function() {
+  item.style.backgroundColor = "purple";
+})

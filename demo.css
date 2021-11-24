@@ -22,6 +22,7 @@ a
 
 .header
 {
+  z-index: 10;
   background-color: white;
   border-bottom-color: #D3D3D3;
   border-left-color: white;
@@ -85,6 +86,45 @@ text-align: center;
 background-size: cover;
 }
 
+.innerblock
+{
+  position: relative;
+  bottom: 605px;
+  left: 100px;
+  padding: 40px 0px 320px;
+  width: 39%;
+}
+
+.innerblock p
+{
+  position: relative;
+  bottom: 112px;
+  background-color: #B0E0E6;
+  color:#00008B	;
+  font-family: leaguespartan;
+  font-weight: lighter;
+  padding: 4px;
+  width: 41%;
+}
+
+#catchy
+{
+  position: relative;
+  bottom: 90px;
+  font-family: leaguespartan;
+  font-size: 50.2px;
+}
+
+.cursor::after
+{
+  content: "|";
+  font-size: 1.5em;
+  font-family: auto;
+  font-weight: lighter;
+  animation: blink infinite 0.7s;
+  animation-delay: 1.5s;
+}
+
 .logo img
 {
 float: left;
@@ -127,6 +167,12 @@ left: 6px;
   animation-delay: 0.2s;
 }
 
+#slide2
+{
+  left: -380px;
+  animation: slide 1s forwards;
+  animation-delay: 0.7s;
+}
 
 @keyframes slide
 {
@@ -136,5 +182,67 @@ left: 6px;
 @keyframes slider
 {
   100% {left:-20px;}
+}
+@keyframes blink {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
+.catchynext
+{
+position: relative;
+bottom: 61px;
+font-family: system-ui;
+font-weight: 400;
+font-size: 19px;
+animation: fadein;
+animation-duration: 9.5s;
+}
+
+@keyframes fadein
+{
+  0%
+  {
+    opacity: 0;
+  }
+
+   25%{opacity: 0;}
+
+   50%{opacity: 0;}
+   75%{opacity: 0;}
+   95%{opacity: 0;}
+   100%
+   {
+     opacity: 1;
+   }
+}
+
+.catchynext1
+{
+  position: relative;
+  bottom: 31px;
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 19px;
+  animation: fadein;
+  animation-duration: 9.5s;
+}
+.button
+{
+  position: relative;
+  background-color:purple;
+  border: none;
+  color: #FFF7EF;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  top:45px;
+  right: 83px;
+  font-family: leaguespartan;
+  animation: fadein ;
+  animation-duration: 10s;
 }
